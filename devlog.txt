@@ -1,0 +1,30 @@
+Canny edge detector
+Greyscale
+gaussian blur
+sobel operator in x, y
+calculate the gradient for x,y
+calculate the orientation for x,y
+
+hysteresis thresholding
+
+OpenCV handles this really well
+
+http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html
+
+Okay, so I made a new conda environment called imageRuler
+
+conda install opencv (this auto-installs numpy)
+conda install matplotlib
+
+let's find a picture:
+https://flowermag.com/growing-dahlia-flowers/
+
+A beautiful Dahlia...
+
+okay, open atom
+
+The dahlia.jpg was a bit low contrast
+
+find a new image:
+http://jonvilma.com/lily.html
+
