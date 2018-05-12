@@ -1,6 +1,7 @@
 ## Exploration of the edge detection function Canny() which uses the Canny algorithm to determine edges within an image.
 # This is a cv2.Canny() example from:
 # http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html
+# Added this project to GitHub
 
 import cv2
 import numpy as np
