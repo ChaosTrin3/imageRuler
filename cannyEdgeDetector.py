@@ -7,16 +7,16 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-while True:
-    lowLim = int(input("lowLim of the Canny hysteresis input: "))
-    highLim = int(input("highLim of the Canny hysteresis input: "))
+#while True:
+lowLim = int(input("lowLim of the Canny hysteresis input: "))
+highLim = int(input("highLim of the Canny hysteresis input: "))
 
-    img = cv2.imread('dahlia.jpg',0)
-    edges = cv2.Canny(img,lowLim,highLim)
+img = cv2.imread('tooling-plate.jpg',0)
+edges = cv2.Canny(img,lowLim,highLim)
 
-    plt.subplot(121),plt.imshow(img,cmap = 'gray')
-    plt.title('Original Image'), plt.xticks([]), plt.yticks([])
-    plt.subplot(122),plt.imshow(edges,cmap = 'gray')
-    plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
+plt.subplot(121),plt.imshow(img,cmap = 'gray')
+plt.title('Original Image'), plt.xticks([]), plt.yticks([])
+plt.subplot(122),plt.imshow(edges,cmap = 'gray')
+plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
 
-    plt.show()
+plt.show()
