@@ -6,6 +6,7 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+#from PIL import Image
 
 #pathToHaarCascades = 'C:/Users/jdt01/Downloads/opencv/sources/data/haarcascades/'
 # The path to the required datasets are added to the repo specifically..
@@ -24,6 +25,23 @@ plt.subplot(122),plt.imshow(edges,cmap = 'gray')
 plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
 
 plt.show()
+
+arr = np.array(edges)
+
+#print(len(arr))
+rows = 0
+cols = 0
+
+for row in arr:
+    for col in row:
+        #print(col)
+        if col == 255:
+            print("I found a black pixel at: (", rows, ",", cols, ")")
+        cols = cols + 1
+    rows = rows + 1
+    cols = 0
+
+print(arr[435])
 
 # Object recognition, although it is using a standard face database...
 # The core tech will be used to find pockets relative to edges..
